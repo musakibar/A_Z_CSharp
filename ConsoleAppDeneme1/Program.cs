@@ -7,18 +7,8 @@ namespace Application
         {
 
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(args[0]);
+            Console.WriteLine(args[0]);            
 
-            #region X Operasyonu
-
-            // Karmaşıklık gidermek ve Kategorize etmek için kullanılan yöntem...
-
-
-
-
-
-
-            #endregion
 
             //todo  Bu şekilde açıklama yapılırsa bu satır TaskList e düşer. Yani yapılması gereken bir işi bu şekilde belirtebiliriz.
 
