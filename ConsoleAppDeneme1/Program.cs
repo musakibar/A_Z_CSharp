@@ -7,13 +7,9 @@ namespace Application
         {
 
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(args[0]);            
+            Console.WriteLine(args[0]);
 
-
-            //todo  Bu şekilde açıklama yapılırsa bu satır TaskList e düşer. Yani yapılması gereken bir işi bu şekilde belirtebiliriz.
-
-            //Rakamsal değişkenlerin default türü integer'dır.
-            //Ondalıklı Rakamsal değişkenlerin default türü double'dır            
+            #region Değişkenler
 
             #region Tuple ile Değişken Tanımlama
 
@@ -69,15 +65,64 @@ namespace Application
             a = 'D';
 
             //object türdeki bir değişkene herhangi bir türdeki değeri göndermek Boxing olarak nitelendirilir.
-            
+
             object _yas = 28; //Boxing
             //_yas değişkeninde 28 değeri object türünde olduğu için matematiksel işlemler yapılamaz.
             //Değer üzerinde türüne özgü işlemler yapabilmek için Unboxing işlemi yapılmalıdır.
             //Cast Operatörü: Unboxing işlemi yapmamızı sağlayan operatör. Tür dönüşümlerinde de kullanılır.
             int yas = (int)_yas; //Unboxing
-            //Cast Operatörü parantezdir.
+                                 //Cast Operatörü parantezdir.
 
             #endregion
+
+            #region var
+            // var kendisine atanan değerin türüne bürünür.
+            // var ile tanımlanan değişkenin değeri tanımlama aşamasında verilir.
+            // var ile değişken tanımlandıktan sonra başka türlere bürünemez.
+
+            var x = 3.14;
+            // x = "asdf"; hatalı kullanım!
+
+            // var atanan değerin türüne bürünür, object atanan değeri boxing yaparak object'e dönüştürür.
+
+            #endregion
+
+            #region dynamic
+            // var, development aşamasında değerin türüne bürünür, dynamic runtime'da bürünür.
+            var b = 5;
+            dynamic _b = "asdasd";
+
+            // var tanımlandıktan sonra başka türlere bürünemez, dynamic bürünebilir.
+            dynamic y = "xcvxc";
+            Console.WriteLine(y.GetType());
+            y = 3.14;
+            Console.WriteLine(y.GetType());
+
+            // Uzaktan gelen veriler var ile değil dynamic ile karşılanır.
+            // Çünkü var tanımlandığı esnada verinin atanmasını ister !!
+
+            #endregion
+
+            //Rakamsal değişkenlerin default türü integer'dır.
+
+            //Ondalıklı Rakamsal değişkenlerin default türü double'dır 
+
+            #endregion
+
+            #region Ek Bilgiler
+
+            // region fonksiyonu yazılan kodların karmaşısını engellemek için kullanılır.
+
+            //todo  Bu şekilde açıklama yapılırsa bu satır TaskList e düşer. Yani yapılması gereken bir işi bu şekilde belirtebiliriz.
+
+
+            #endregion
+
+
+
+
+
+
         }
 
 
