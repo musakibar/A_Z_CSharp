@@ -7,7 +7,7 @@ namespace Application
         {
 
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(args[0]);
+            //Console.WriteLine(args[0]);
 
             #region Değişkenler
 
@@ -162,9 +162,9 @@ namespace Application
             //Bilinçli tür dönüşümü sırasında veri kaybı olacak olursa runtime'da uyarı verecek kontrol mekanizması.
             checked
             {
-                int a1 = 500;
-                byte b1 = (byte)a1;
-                Console.WriteLine(b1);
+                //int a1 = 500;
+                //byte b1 = (byte)a1;
+                //Console.WriteLine(b1);
             }
 
             #endregion
