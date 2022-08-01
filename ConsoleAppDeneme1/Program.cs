@@ -7,7 +7,7 @@ namespace Application
         {
 
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(args[0]);            
+            Console.WriteLine(args[0]);
 
             #region Ek Bilgiler
 
@@ -18,7 +18,16 @@ namespace Application
 
             #endregion
 
-            
+            #region Operatörler Deneme
+
+            int x = 3, y = 5;
+            int sonuc = x * y;
+            Console.WriteLine(sonuc);   
+
+
+            #endregion
+
+
 
 
 
