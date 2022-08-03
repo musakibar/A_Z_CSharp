@@ -22,7 +22,11 @@ namespace Application
 
             int x = 3, y = 5;
             int sonuc = x * y;
-            Console.WriteLine(sonuc);   
+            Console.WriteLine(sonuc);
+
+            string a = "deneme";
+            Console.WriteLine(a);
+
 
 
             #endregion
