@@ -27,6 +27,10 @@ namespace Application
             string a = "deneme";
             Console.WriteLine(a);
 
+            string b = "deneme2";
+            Console.WriteLine(b);
+
+            //Visual studio içerisinden yaptığım pushlar github aktivite tablosunda görünmüyor.
 
 
             #endregion
