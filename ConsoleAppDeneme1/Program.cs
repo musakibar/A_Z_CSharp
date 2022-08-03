@@ -18,24 +18,7 @@ namespace Application
 
             #endregion
 
-            #region Operatörler Deneme
-
-            int x = 3, y = 5;
-            int sonuc = x * y;
-            Console.WriteLine(sonuc);
-
-            string a = "deneme";
-            Console.WriteLine(a);
-
-            string b = "deneme2";
-            Console.WriteLine(b);
-
-            //Visual studio içerisinden yaptığım pushlar github aktivite tablosunda görünmüyor.
-
-
-            #endregion
-
-
+            // denemeler iptal
 
 
 
